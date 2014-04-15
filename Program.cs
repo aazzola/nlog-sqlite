@@ -28,7 +28,7 @@
 
             using (SQLiteConnection connection = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SQLite"].ToString()))
             using (SQLiteCommand command = new SQLiteCommand(
-                "CREATE TABLE Log (Timestamp TEXT, Loglevel TEXT, Logger TEXT, Callsite TEXT, Message TEXT)",
+                "CREATE TABLE Log (Timestamp TEXT, Loglevel TEXT, Callsite TEXT, Message TEXT)",
                 connection))
             {
                 connection.Open();
